@@ -74,23 +74,25 @@ class ProductDetailScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Brand: ${listProduct[index].brand}",
-                        style: const TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w400)),
-                    Container(
-                      alignment: Alignment.centerLeft,
-                      child: Text("\$ ${listProduct[index].price.toString()}"),
-                    ),
-                  ],
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Brand: ${listProduct[index].brand}",
+                          style: const TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.w400)),
+                      Container(
+                        alignment: Alignment.centerLeft,
+                        child: Text("\$ ${listProduct[index].price.toString()}"),
+                      ),
+                    ],
+                  ),
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Text(
-                      "Brand: ${listProduct[index].rating}",
+                      "Rating: ${listProduct[index].rating}",
                       style: const TextStyle(
                           fontSize: 16, fontWeight: FontWeight.bold),
                     ),
