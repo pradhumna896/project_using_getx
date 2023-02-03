@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
-
-
 import '../controller/product_controlller.dart';
 import '../model/product_model.dart';
 import 'product_detail_screen.dart';

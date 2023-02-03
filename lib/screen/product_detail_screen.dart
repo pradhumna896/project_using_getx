@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:get/get.dart';
-
 import '../controller/product_controlller.dart';
 import '../model/product_model.dart';
 
@@ -37,6 +36,7 @@ class ProductDetailScreen extends StatelessWidget {
         children: [
           Stack(children: [
             Container(
+              margin: const EdgeInsets.all(0),
               height: 300,
               width: double.maxFinite,
               child: PageView.builder(
@@ -60,6 +60,7 @@ class ProductDetailScreen extends StatelessWidget {
                     (i) => Container(
                           margin: const EdgeInsets.only(left: 3),
                           height: 6,
+                          // ignore: unrelated_type_equality_checks
                           width:controller.index==i?18:6,
                           decoration:  BoxDecoration(
                               borderRadius: BorderRadius.circular(6), color: Colors.deepOrange),
