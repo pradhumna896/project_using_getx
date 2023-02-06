@@ -1,11 +1,7 @@
 import 'dart:convert';
-
 import 'package:get/get.dart';
-
 import 'package:http/http.dart' as http;
-
 import '../model/product_model.dart';
-
 
 class ProductController extends GetxController {
   var productList = <ProductModel>[].obs;

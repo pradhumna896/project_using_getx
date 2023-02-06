@@ -104,7 +104,7 @@ class ProductDetailScreen extends StatelessWidget {
                       allowHalfRating: true,
                       itemCount: 5,
                       itemSize: 20,
-                      itemPadding: const EdgeInsets.symmetric(horizontal: 4.0),
+                      itemPadding: const EdgeInsets.symmetric(horizontal: 0.0),
                       itemBuilder: (context, _) => const Icon(
                         Icons.star,
                         color: Colors.amber,
