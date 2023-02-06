@@ -63,7 +63,8 @@ class ProductDetailScreen extends StatelessWidget {
                           // ignore: unrelated_type_equality_checks
                           width:controller.index==i?18:6,
                           decoration:  BoxDecoration(
-                              borderRadius: BorderRadius.circular(6), color: Colors.deepOrange),
+                              borderRadius: BorderRadius.circular(6),
+                              color:const Color(0xffE69023)),
                         ))
               )),
             ),
@@ -129,7 +130,7 @@ class ProductDetailScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.deepOrange,
+                    backgroundColor: const Color(0xffE69023),
                     minimumSize: const Size(double.maxFinite, 40)),
                 onPressed: () {},
                 child: const Text("Buy Now")),
