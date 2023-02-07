@@ -14,7 +14,9 @@ class ProductScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text("Product",style: TextStyle(color: Colors.black),),centerTitle: true,elevation: 0,backgroundColor: Colors.transparent,),
       body: Obx((){
-        return controller.isLoading.value?const Center(child: CircularProgressIndicator(),):
+        return controller.isLoading.value?const Center(child: CircularProgressIndicator(
+          color: Color(0xffE69023),
+        ),):
         ListView.builder(
           itemCount: productList.length,
           itemBuilder: (_,index){
