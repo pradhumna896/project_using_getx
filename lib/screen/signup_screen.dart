@@ -10,8 +10,9 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff21222D),
+      backgroundColor:const Color(0xff21222D),
       body: Container(
+        margin: const EdgeInsets.all(0),
         child: Column(
           children: [
             Expanded(
@@ -25,7 +26,7 @@ class SignupScreen extends StatelessWidget {
                         child: Container(
                           width: MediaQuery.of(context).size.width,
                           height: MediaQuery.of(context).size.height * 0.3,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Color(0xffE69023),
                           ),
                         ),
@@ -98,6 +99,7 @@ class SignupScreen extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Container(
+                      margin: const EdgeInsets.all(0.0),
                       child: const Center(
                           child: Text("SignUp",
                               style: TextStyle(

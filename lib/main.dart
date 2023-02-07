@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:project_using_getx/screen/product_screen.dart';
 import 'package:project_using_getx/screen/signup_screen.dart';
 
 void main() {
